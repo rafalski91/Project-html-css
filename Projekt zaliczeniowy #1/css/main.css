@@ -232,7 +232,7 @@ footer{
   place-content: space-between;
 }
 
-.logofooter{
+.logo-footer{
   width: 40%;
   height: 100%;
   padding: 20px 0px 0px 60px;
@@ -240,24 +240,22 @@ footer{
   font-weight: 500;
 }
 
-.linksfooter{
+.links{
   width: 30%;
   height: 100%;
   padding: 15px 60px 0px 0px;
   text-align: end;
 }
 
-.linksfooter > i{
+.links > i{
   font-size: 26px;
   margin-left: 20px;
   
 }
 
-.linksfooter > i:hover{
-  transform: scale(1.1);
+.links > i:hover{
   cursor: pointer;
   margin-bottom: 5px;
-  font-size: 28px;
 }
 
 .fa-facebook-square:hover{
