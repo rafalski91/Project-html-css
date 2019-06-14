@@ -193,15 +193,15 @@ article > p{
 }
 
 .box-container{
-  margin: auto;
   display: grid;
-  width: 700px;
-  height: 280px;
-  grid-template-columns: 20% 20% 20%;
-  grid-template-rows: 50% 50%;
+  margin: 50px auto;
+  width: 600px;
+  height: 350px;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 40% 40%;
   grid-column-gap: 50px;
   grid-row-gap: 50px;
-  justify-content: center;
+  place-content: center;
 }
 
 .box-container > div{
