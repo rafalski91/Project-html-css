@@ -166,16 +166,19 @@ article > header{
   color: #000;
   padding: 15px 10px;
   font-weight: 700;
+  direction: ltr !important;
 }
 
 article > p{
   color: #000;
   padding: 15px 10px;
   text-align: justify;
+  direction: ltr !important;
 }
 
 .person:nth-child(odd){
   direction: rtl;
+  text-align: right;
 }
 
 #products{
@@ -192,16 +195,21 @@ article > p{
   width: 100%;
 }
 
+#products > .box-container{
+  place-content: center;
+  display: grid;
+  margin: 20% auto;
+}
+
 .box-container{
   display: grid;
-  margin: 50px auto;
   width: 600px;
   height: 350px;
   grid-template-columns: 25% 25% 25%;
   grid-template-rows: 40% 40%;
   grid-column-gap: 50px;
   grid-row-gap: 50px;
-  place-content: center;
+  
 }
 
 .box-container > div{
