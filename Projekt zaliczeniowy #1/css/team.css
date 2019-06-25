@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     place-content: center;
-    width: 100%;
+    margin: auto;
+    width: 90%;
     height: 100%;
     padding: 50px 0;
     box-sizing: border-box;
@@ -141,6 +142,10 @@
 
   .person:nth-child(odd) > article{
     text-align: right;
+  }
+
+  .footer-container{
+    width: 960px;
   }
 }
 

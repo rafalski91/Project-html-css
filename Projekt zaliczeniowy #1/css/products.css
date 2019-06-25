@@ -8,13 +8,14 @@
   
   .products-container{
     place-content: center;
-    width: 100%;
+    width: 90%;
     max-height: 100%;
+    margin: auto;
   }
   
   .products-container h2{
     color: #FEFEFE;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     width: 100%;
     text-align: center;
@@ -69,11 +70,20 @@
 @media screen and (min-width: 375px){
   .box-container > div{
     height: 250px;
-}
+  }
 
+  .products-container h2{
+    font-size: 22px;
+  }
+}
 @media screen and (min-width: 425px){
   .box-container > div{
     height: 300px;
+}
+
+  .products-container h2{
+    font-size: 24px;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -115,12 +125,16 @@
     background-color: #fff;
     cursor: pointer;
   }
-}
 
+  .footer-container{
+    width: 960px;
+  }
+}
+/* 
 @media screen and (min-width: 1440px){
   
 }
 
 @media screen and (min-width: 2560px){
-  
-}
+
+} */
