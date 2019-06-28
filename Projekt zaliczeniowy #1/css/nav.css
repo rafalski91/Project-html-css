@@ -1,54 +1,68 @@
 nav{
-    width: 100%;
-    height: 50px;
-    background-color: #464646;
-    position: sticky;
-    top: 0;
-    z-index: 99;
-  }
+  /* Position */
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  /* Display & Box Model */
+  width: 100%;
+  height: 50px;
+  /* Colors */
+  background-color: #464646;
+}
 
-  .nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    height: 100%;
-    margin: auto;
-  }
+.nav-container{
+  /* Display & Box Model */
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  /* Text */
+  justify-content: space-between;
+  align-items: center;
+}
   
 .logo a{
-    color: #fff;
-  }
+  /* Colors */
+  color: #fff;
+}
   
 .logo a:hover{
+  /* Colors */
   color: #ddd;
-  cursor: pointer;
 }
 
 .hamburger-menu{
+  /* Position */
+  position: relative;
+  /* Display & Box Model */
   width: 50px;
   height: 25px;
+  /* Text */
   direction: rtl;
   text-align: center;
-  position: relative;
 }
 
 .hamburger-box{
+  /* Display & Box Model */
   width: 50px;
   height: 25px;
-  cursor: pointer;
 }
 
 .hamburger-menu .hamburger-piece{
-  background-color: #fff;
+  /* Position */
+  display: block;
+  /* Display & Box Model */
   width: 50px;
   height: 5px;
-  display: block;
   margin-bottom: 3px;
+  /* Colors */
+  background-color: #fff;
 }
 
 .hamburger-menu:hover .hamburger-piece{
+  /* Colors */
   background-color: #fff;
+  /* Others */
   transition: all 1s;
   -ms-transform: rotate(180deg); /* IE 9 */
   -webkit-transform: rotate(180deg); /* Safari prior 9.0 */
@@ -56,62 +70,64 @@ nav{
 }
 
 ul{
-  direction: rtl;
-  background-color: #464646;
-  display: none;
+  /* Position */
   position: absolute;
   top: 35px;
   right: -15px;
+  /* Display & Box Model */
+  display: none;
+  /* Colors */
+  background-color: #464646;
+  /* Text */
   text-align: center;
+  direction: rtl;
 }
 
 .hamburger-menu:hover ul{
+  /* Display & Box Model */
   display: block;
 }
 
 ul li{
-  direction: ltr;
+  /* Position */
+  position: relative;
+  /* Display & Box Model */
+  display: block;
   width: 100px;
   height: 50px;
-  text-align: center;
   padding: 0;
-  display: block;
   border-top: 1px dashed #fff;
   border-bottom: 1px dashed #fff;
-  position: relative;
-
+  /* Text */
+  text-align: center;
+  direction: ltr;
 }
 
 ul li a{
-  color: #fff;
-  cursor: pointer;
+  /* Display & Box Model */
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin: auto;
   width: 100%;
   height: 100%;
-  
-}
-
-ul li:hover{
-  transition: all 1s;
-}
-
-ul li a:hover{
-  color: #464646;
-  background-color: #fff;
+  /* Colors */
+  color: #fff;
+  /* Text */
+  align-items: center;
+  justify-content: center;
 }
 
 ul li .disabled{
-  color: #fff;
-  text-decoration: line-through;
+  /* Display & Box Model */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
   width: 100%;
   height: 100%;
+  margin: auto;
+  /* Colors */
+  color: #fff;
+  /* Text */
+  text-decoration: line-through;
+  align-items: center;
+  justify-content: center;
 }
 
 /* @media screen and (min-width: 375px){
@@ -124,57 +140,95 @@ ul li .disabled{
 
 @media screen and (min-width: 768px){
   .hamburger-box{
+    /* Display & Box Model */
     display: none;
   }
 
   .hamburger-menu{
+    /* Display & Box Model */
     width: 50%;
     height: 50px;
     margin: 0;
   }
 
   .hamburger-menu:hover ul{
+    /* Display & Box Model */
     display: flex;
   }
-
- .logo{
-
- }
   
   ul{
-    direction: ltr;
-    background-color: #464646;
-    display: flex;
+    /* Position */
     position: initial;
-    place-content: center;
-    transition: all 1s;
+    /* Display & Box Model */
+    display: flex;
     margin: 0;
+    /* Colors */
+    background-color: #464646;
+    /* Text */
+    direction: ltr;
+    place-content: center;
+    /* Others */
+    transition: all 1s;
   }
 
   ul li{
-    border: none;
+    /* Display & Box Model */
     display: flex;
+    border: none;
   }
   
   li a{
+    /* Colors */
     color: #fff;
   }
   
   li a:hover{
+    /* Colors */
     color: #ddd;
-    cursor: pointer;
   }
   
   li span{
-    cursor: not-allowed;
+    /* Display & Box Model */
     opacity: 0.7;
   }
 }
 
 @media screen and (min-width: 1024px){
   .nav-container{
+    /* Display & Box Model */
     width: 960px;
     margin: auto;
+  }
+
+  .hamburger-box{
+      /* Others */
+    cursor: pointer;
+  }
+
+  .logo a:hover{
+    /* Others */
+    cursor: pointer;
+  }
+
+  ul li a{
+    /* Others */
+    cursor: pointer;
+  }
+
+  li span{
+    /* Others */
+    cursor: not-allowed;
+  }
+
+  ul li:hover{
+    /* Others */
+    transition: all 1s;
+  }
+
+  ul li a:hover{
+    /* Colors */
+    color: #464646;
+    background-color: #fff;
   }
 }
 
