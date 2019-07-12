@@ -61,7 +61,7 @@ nav{
 
 .hamburger-menu:hover .hamburger-piece{
   /* Colors */
-  background-color: #fff;
+  background-color: #ddd;
   /* Others */
   transition: all 1s;
   -ms-transform: rotate(180deg); /* IE 9 */
