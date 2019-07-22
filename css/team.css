@@ -1,0 +1,188 @@
+#team{
+  /* Display & Box Model */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* Colors */
+  background-color: #eee;
+}
+
+.team-container{
+  /* Display & Box Model */
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.team-container h3{
+  /* Display & Box Model */
+  width: 100%;
+  margin-bottom: 20px;
+  /* Colors */
+  color: rgb(27, 26, 78);
+  /* Text */
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.person{
+  /* Display & Box Model */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+  margin: 20px 0;
+  /* Text */
+  text-align: center;
+}
+
+.person > .circle{
+  /* Display & Box Model */
+  width: 280px;
+  height: 160px;
+  margin-bottom: 20px;
+  margin: 20px auto;
+}
+
+.person > .circle > img{
+  /* Display & Box Model */
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  size: cover;
+}
+
+article{
+  /* Display & Box Model */
+  width: 90%;
+  height: 100%;
+  /* Colors */
+  color: #000;
+  /* Text */
+  text-align: justify;
+}
+
+article > header{
+  /* Display & Box Model */
+  padding: 15px 10px;
+  /* Colors */
+  color: #000;
+  /* Text */
+  font-weight: 700;
+}
+
+article > p{
+  /* Display & Box Model */
+  padding: 15px 10px;
+  /* Colors */
+  color: #000;
+}
+
+@media screen and (min-width: 375px){
+  article{
+    /* Display & Box Model */
+    padding: 0 10px;
+  }
+}
+
+/* @media screen and (min-width: 425px){
+
+} */
+
+@media screen and (min-width: 768px){
+  .team-container h3{
+    /* Text */
+    text-align: left;
+  }
+  
+  .person{
+    /* Display & Box Model */
+    flex-direction: row;
+    width: 95%;
+    margin: 20px 0;
+  }
+  
+  .person > .circle{
+    /* Display & Box Model */
+    margin: 0;
+  }
+  
+  article > header{
+    /* Text */
+    direction: ltr;
+  }
+  
+  article > p{
+    /* Text */
+    direction: ltr;
+  }
+  
+  .person:nth-child(odd){
+    /* Text */
+    direction: rtl;
+    text-align: right;
+  }
+
+  .person:nth-child(odd) > article{
+    /* Text */
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .team-container h3{
+    /* Text */
+    text-align: left;
+  }
+  
+  .person{
+    /* Display & Box Model */
+    flex-direction: row;
+  }
+  
+  .person > .circle{
+    /* Display & Box Model */
+    margin: 0;
+  }
+  
+  article > header{
+    /* Text */
+    direction: ltr;
+  }
+  
+  article > p{
+    /* Text */
+    direction: ltr;
+  }
+  
+  .person:nth-child(odd){
+    /* Text */
+    direction: rtl;
+    text-align: right;
+  }
+
+  .person:nth-child(odd) > article{
+    /* Text */
+    text-align: right;
+  }
+
+  .team-container{
+    /* Display & Box Model */
+    place-content: center;
+    width: 960px;
+  }
+}
+
+/* @media screen and (min-width: 1440px){
+  
+}
+
+@media screen and (min-width: 2560px){
+  
+} */
